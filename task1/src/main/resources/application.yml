@@ -1,0 +1,29 @@
+app:
+  logging:
+    enable: true
+
+spring:
+  application:
+    name: task1
+  datasource:
+    url: jdbc:h2:mem:task-1-db
+    username: sa
+    password: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    net:
+      ttddyy:
+        dsproxy:
+          listener: debug
+
+
